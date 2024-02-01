@@ -2,12 +2,14 @@ import tkinter as tk
 from view.frame.principal import Frame_principal
 from view.frame.productos import Frame_productos
 from view.frame.cliente import Frame_cliente
+from model.clientes import create_table
 
 class MainApplication(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.title("Stock")
         self.resizable(0,0)
+        create_table()
 
         self.frame_prinicipal = Frame_principal(self)
         self.frame_productos = Frame_productos(self)

@@ -3,7 +3,6 @@ from tkinter import messagebox
 
 def create_table():
     conexion = ConexionDB()
-    print("llegue")
     sql = '''
 CREATE TABLE IF NOT EXISTS clientes(
     id_cliente INTEGER,
